@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Home.css';
 import logo from '../assets/images/logo-green-processed.png';
@@ -18,7 +19,7 @@ const Home = () => {
                         </h1>
                         <p className="hero-subtitle">{t('home.subtitle')}</p>
                         <div className="hero-cta">
-                            <a href="/menu" className="btn btn-primary">{t('home.cta')}</a>
+                            <Link to="/menu" className="btn btn-primary">{t('home.cta')}</Link>
                         </div>
                     </div>
                     <div className="hero-image">
