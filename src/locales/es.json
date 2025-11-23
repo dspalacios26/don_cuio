@@ -27,9 +27,10 @@
             "orden": "4 Tacos de tu elección",
             "costra": "Costra de queso con carne",
             "gringa": "Tortilla de harina con queso y carne",
-            "agua_nat": "Agua de fruta natural",
+            "agua_nat": "Agua natural",
             "refresco": "Refresco",
-            "agua_min": "Agua mineral"
+            "agua_min": "Agua mineral",
+            "boing": "Jugo"
         }
     },
     "location": {
@@ -37,7 +38,7 @@
         "address_title": "Dirección",
         "hours_title": "Horario",
         "contact_title": "Contacto",
-        "days": "Lunes - Domingo",
+        "days": "Martes - Domingo",
         "map_loading": "Cargando Mapa..."
     },
     "contact": {
@@ -48,7 +49,7 @@
         "send": "Enviar Mensaje"
     },
     "footer": {
-        "tagline": "Tacos Auténticos. Vibra Moderna.",
+        "tagline": "Tacos Auténticos.",
         "rights": "Todos los derechos reservados."
     }
 }

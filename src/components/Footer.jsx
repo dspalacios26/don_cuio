@@ -14,11 +14,11 @@ const Footer = () => {
                 </div>
                 <div className="footer-section">
                     <h4>{t('location.hours_title')}</h4>
-                    <p>{t('location.days')}: 1 PM - 4 AM</p>
+                    <p>{t('location.days')}: 8 PM - 4 AM</p>
                 </div>
                 <div className="footer-section">
                     <h4>{t('location.contact_title')}</h4>
-                    <p>Centro, C. Colón</p>
+                    <p>Centro, C. Colón 455 Sur</p>
                     <p>TRC, MX</p>
                 </div>
             </div>

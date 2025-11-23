@@ -84,13 +84,16 @@ def process_logos():
         # --- Process Secondary Logo (Icon) ---
         # Crop box: (1000, 1600, 1900, 2300)
         icon_crop = img_original.crop((1000, 1600, 1900, 2300))
+        icon_crop2 = img_original.crop((300, 1600, 800, 2200))
         
         # Trim whitespace
         bbox_icon = icon_crop.getbbox()
         if bbox_icon:
             icon_img = icon_crop.crop(bbox_icon)
+            icon_img2 = icon_crop2.crop(bbox_icon)
         else:
             icon_img = icon_crop
+            icon_img2 = icon_crop2
 
         # Save White Version
         icon_white = Image.new("RGBA", icon_img.size)
@@ -115,6 +118,18 @@ def process_logos():
         icon_green.putdata(green_data_icon)
         icon_green.save(f"{output_dir}/logo-icon-green.png", "PNG")
         print(f"Saved {output_dir}/logo-icon-green.png")
+
+        # Save Green Version 2
+        icon_green2 = Image.new("RGBA", icon_img2.size)
+        green_data_icon2 = []
+        for item in icon_img2.getdata():
+            if item[3] > 0:
+                green_data_icon2.append((0, 165, 82, item[3]))
+            else:
+                green_data_icon2.append((0, 0, 0, 0))
+        icon_green2.putdata(green_data_icon2)
+        icon_green2.save(f"{output_dir}/logo-icon-green2.png", "PNG")
+        print(f"Saved {output_dir}/logo-icon-green2.png")
 
         # Save Black Version
         icon_black = Image.new("RGBA", icon_img.size)

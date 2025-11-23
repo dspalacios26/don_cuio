@@ -13,14 +13,14 @@ const Location = () => {
                 <div className="location-info">
                     <div className="info-block">
                         <h2>{t('location.address_title')}</h2>
-                        <p>Centro, C. Colón</p>
+                        <p>Centro, C. Colón 455 Sur</p>
                         <p>Torreón, Coahuila, MX</p>
                     </div>
 
                     <div className="info-block">
                         <h2>{t('location.hours_title')}</h2>
                         <p>{t('location.days')}</p>
-                        <p className="highlight">1 PM - 4 AM</p>
+                        <p className="highlight">8 PM - 4 AM</p>
                     </div>
 
                     <div className="info-block">

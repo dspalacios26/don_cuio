@@ -27,9 +27,10 @@
             "orden": "4 Tacos of your choice",
             "costra": "Cheese crust with meat",
             "gringa": "Flour tortilla with cheese and meat",
-            "agua_nat": "Fresh fruit water",
+            "agua_nat": "Natural water",
             "refresco": "Soda",
-            "agua_min": "Mineral water"
+            "agua_min": "Mineral water",
+            "boing": "Juice"
         }
     },
     "location": {
@@ -37,7 +38,7 @@
         "address_title": "Address",
         "hours_title": "Hours",
         "contact_title": "Contact",
-        "days": "Monday - Sunday",
+        "days": "Tuesday - Sunday",
         "map_loading": "Map Loading..."
     },
     "contact": {
@@ -48,7 +49,7 @@
         "send": "Send Message"
     },
     "footer": {
-        "tagline": "Authentic Tacos. Modern Vibe.",
+        "tagline": "Authentic Tacos.",
         "rights": "All Rights Reserved."
     }
 }

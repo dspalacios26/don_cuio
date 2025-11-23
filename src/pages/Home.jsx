@@ -31,8 +31,8 @@ const Home = () => {
             {/* Marquee / Highlights */}
             <div className="marquee-container">
                 <div className="marquee-content">
-                    <span>TACOS DON CUIO • OPEN 1 PM - 4 AM • AUTHENTIC FLAVOR • </span>
-                    <span>TACOS DON CUIO • OPEN 1 PM - 4 AM • AUTHENTIC FLAVOR • </span>
+                    <span>TACOS DON CUIO • OPEN 8 PM - 4 AM • AUTHENTIC FLAVOR • </span>
+                    <span>TACOS DON CUIO • OPEN 8 PM - 4 AM • AUTHENTIC FLAVOR • </span>
                 </div>
             </div>
 

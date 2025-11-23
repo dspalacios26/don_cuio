@@ -21,6 +21,7 @@ const Menu = () => {
             { name: 'Agua Natural (1Lt)', price: '$30', desc: t('menu.items.agua_nat') },
             { name: 'Refresco', price: '$35', desc: t('menu.items.refresco') },
             { name: 'Agua Mineral', price: '$35', desc: t('menu.items.agua_min') },
+            { name: 'Boing', price: '$35', desc: t('menu.items.boing') },
         ]
     };
 
