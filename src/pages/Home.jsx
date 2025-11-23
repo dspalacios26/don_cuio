@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Home.css';
-import logo from '../assets/images/logo-green-processed.png';
+import logo from '../assets/images/logo-icon-green.png';
 
 const Home = () => {
     const { t } = useTranslation();

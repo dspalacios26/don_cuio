@@ -11,7 +11,8 @@ def process_logos():
         return
 
     try:
-        img = Image.open(source_path).convert("RGBA")
+        img_original = Image.open(source_path).convert("RGBA")
+        img = img_original.copy()
         
         # Create a mask of non-transparent pixels
         datas = img.getdata()
@@ -79,6 +80,53 @@ def process_logos():
         black_img.putdata(black_data)
         black_img.save(f"{output_dir}/logo-black-processed.png", "PNG")
         print(f"Saved {output_dir}/logo-black-processed.png")
+
+        # --- Process Secondary Logo (Icon) ---
+        # Crop box: (1000, 1600, 1900, 2300)
+        icon_crop = img_original.crop((1000, 1600, 1900, 2300))
+        
+        # Trim whitespace
+        bbox_icon = icon_crop.getbbox()
+        if bbox_icon:
+            icon_img = icon_crop.crop(bbox_icon)
+        else:
+            icon_img = icon_crop
+
+        # Save White Version
+        icon_white = Image.new("RGBA", icon_img.size)
+        white_data_icon = []
+        for item in icon_img.getdata():
+            if item[3] > 0:
+                white_data_icon.append((255, 255, 255, item[3]))
+            else:
+                white_data_icon.append((0, 0, 0, 0))
+        icon_white.putdata(white_data_icon)
+        icon_white.save(f"{output_dir}/logo-icon-white.png", "PNG")
+        print(f"Saved {output_dir}/logo-icon-white.png")
+
+        # Save Green Version
+        icon_green = Image.new("RGBA", icon_img.size)
+        green_data_icon = []
+        for item in icon_img.getdata():
+            if item[3] > 0:
+                green_data_icon.append((0, 165, 82, item[3]))
+            else:
+                green_data_icon.append((0, 0, 0, 0))
+        icon_green.putdata(green_data_icon)
+        icon_green.save(f"{output_dir}/logo-icon-green.png", "PNG")
+        print(f"Saved {output_dir}/logo-icon-green.png")
+
+        # Save Black Version
+        icon_black = Image.new("RGBA", icon_img.size)
+        black_data_icon = []
+        for item in icon_img.getdata():
+            if item[3] > 0:
+                black_data_icon.append((0, 0, 0, item[3]))
+            else:
+                black_data_icon.append((0, 0, 0, 0))
+        icon_black.putdata(black_data_icon)
+        icon_black.save(f"{output_dir}/logo-icon-black.png", "PNG")
+        print(f"Saved {output_dir}/logo-icon-black.png")
 
     except Exception as e:
         print(f"An error occurred: {e}")
