@@ -1,0 +1,108 @@
+.menu-page {
+    padding: 8rem var(--spacing-md) var(--spacing-xl);
+}
+
+.page-title {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-primary);
+}
+
+.menu-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.menu-category {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+    padding-bottom: var(--spacing-xs);
+}
+
+.menu-subtitle {
+    margin-bottom: 4rem;
+    color: var(--text-muted);
+    font-family: var(--font-family-serif);
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    /* Increased gap */
+}
+
+@media (max-width: 768px) {
+    .menu-page {
+        padding: 6rem 1rem 2rem;
+        /* Adjusted padding */
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .menu-category {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-subtitle {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        /* Single column */
+        gap: 2rem;
+    }
+
+    .menu-card {
+        padding: 1.25rem;
+    }
+}
+
+.menu-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    border-radius: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-5px);
+}
+
+.menu-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: var(--spacing-sm);
+}
+
+.menu-card-header h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.price {
+    font-family: var(--font-family-brand);
+    font-size: 1.25rem;
+    color: var(--color-primary);
+}
+
+.menu-desc {
+    color: var(--text-muted);
+    font-family: var(--font-family-serif);
+    font-style: italic;
+}

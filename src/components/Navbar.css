@@ -1,0 +1,118 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 40px;
+    /* Adjust based on logo aspect ratio */
+    width: auto;
+}
+
+.navbar-links {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.navbar-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    font-family: var(--font-family-display);
+}
+
+.navbar-links a:hover {
+    color: var(--color-primary);
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 2px;
+    background-color: var(--color-white);
+    transition: var(--transition-medium);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.8rem 0;
+    }
+
+    .navbar-logo img {
+        height: 32px;
+        /* Smaller logo on mobile */
+    }
+
+    .navbar-links {
+        position: fixed;
+        /* Fixed to cover screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--nav-bg);
+        backdrop-filter: blur(15px);
+        padding: 2rem;
+        gap: 2rem;
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border-bottom: none;
+    }
+
+    .navbar-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .navbar-links a {
+        font-size: 1.5rem;
+        /* Larger touch targets */
+    }
+
+    .navbar-toggle {
+        display: flex;
+        z-index: 1001;
+        /* Above the menu */
+    }
+
+    /* Animate hamburger to X */
+    .navbar-toggle.open .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .navbar-toggle.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle.open .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+}

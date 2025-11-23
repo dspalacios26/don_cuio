@@ -1,0 +1,54 @@
+{
+    "nav": {
+        "home": "Home",
+        "menu": "Menu",
+        "location": "Location",
+        "contact": "Contact"
+    },
+    "home": {
+        "title_1": "Authentic",
+        "title_2": "Tacos",
+        "subtitle": "Est. 2025 • Torreón, Coahuila",
+        "cta": "View Menu",
+        "intro_title": "The Real Deal",
+        "intro_text": "Serving the best tacos in town with a modern twist. Come for the food, stay for the vibe."
+    },
+    "menu": {
+        "title": "Menu",
+        "subtitle": "With meat of your choice",
+        "category_tacos": "Tacos",
+        "category_specials": "Cheese & Specials",
+        "category_drinks": "Drinks",
+        "items": {
+            "adobada": "Marinated pork",
+            "suadero": "Slow-cooked beef brisket",
+            "cuero": "Pork skin",
+            "buche": "Pork stomach",
+            "orden": "4 Tacos of your choice",
+            "costra": "Cheese crust with meat",
+            "gringa": "Flour tortilla with cheese and meat",
+            "agua_nat": "Fresh fruit water",
+            "refresco": "Soda",
+            "agua_min": "Mineral water"
+        }
+    },
+    "location": {
+        "title": "Find Us",
+        "address_title": "Address",
+        "hours_title": "Hours",
+        "contact_title": "Contact",
+        "days": "Monday - Sunday",
+        "map_loading": "Map Loading..."
+    },
+    "contact": {
+        "title": "Contact Us",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send Message"
+    },
+    "footer": {
+        "tagline": "Authentic Tacos. Modern Vibe.",
+        "rights": "All Rights Reserved."
+    }
+}

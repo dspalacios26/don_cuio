@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Belwe';
+    src: url('../assets/fonts/Belwe-Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* Brand Colors */
+    --color-primary: #00a552;
+    /* Pantone 7482 C */
+    --color-black: #000000;
+    /* Pantone Black 6 C */
+    --color-white: #FFFFFF;
+    --color-gray-100: #f3f4f6;
+    --color-gray-800: #1f2937;
+
+    /* Typography */
+    --font-family-display: 'Libre Baskerville', serif;
+    --font-family-body: 'Libre Baskerville', serif;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease;
+
+    /* Semantic Colors (Default Dark) */
+    --bg-color: var(--color-black);
+    --text-color: var(--color-white);
+    --text-muted: var(--color-gray-100);
+    --card-bg: #111111;
+    --nav-bg: rgba(0, 0, 0, 0.9);
+    --hero-bg: radial-gradient(circle at center, #111 0%, #000 100%);
+    --border-color: #333;
+}
+
+[data-theme="light"] {
+    --bg-color: var(--color-white);
+    --text-color: var(--color-black);
+    --text-muted: var(--color-gray-800);
+    --card-bg: var(--color-gray-100);
+    --nav-bg: rgba(255, 255, 255, 0.9);
+    --hero-bg: radial-gradient(circle at center, #f3f4f6 0%, #fff 100%);
+    --border-color: #e5e7eb;
+}

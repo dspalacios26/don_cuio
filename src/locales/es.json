@@ -1,0 +1,54 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "menu": "Menú",
+        "location": "Ubicación",
+        "contact": "Contacto"
+    },
+    "home": {
+        "title_1": "Tacos",
+        "title_2": "Auténticos",
+        "subtitle": "Est. 2025 • Torreón, Coahuila",
+        "cta": "Ver Menú",
+        "intro_title": "El Verdadero Sabor",
+        "intro_text": "Sirviendo los mejores tacos de la ciudad con un toque moderno. Ven por la comida, quédate por el ambiente."
+    },
+    "menu": {
+        "title": "Menú",
+        "subtitle": "Con carne de tu elección",
+        "category_tacos": "Tacos",
+        "category_specials": "Quesos y Especiales",
+        "category_drinks": "Bebidas",
+        "items": {
+            "adobada": "Cerdo marinado",
+            "suadero": "Falda de res cocida a fuego lento",
+            "cuero": "Cueritos",
+            "buche": "Buche de cerdo",
+            "orden": "4 Tacos de tu elección",
+            "costra": "Costra de queso con carne",
+            "gringa": "Tortilla de harina con queso y carne",
+            "agua_nat": "Agua de fruta natural",
+            "refresco": "Refresco",
+            "agua_min": "Agua mineral"
+        }
+    },
+    "location": {
+        "title": "Encuéntranos",
+        "address_title": "Dirección",
+        "hours_title": "Horario",
+        "contact_title": "Contacto",
+        "days": "Lunes - Domingo",
+        "map_loading": "Cargando Mapa..."
+    },
+    "contact": {
+        "title": "Contáctanos",
+        "name": "Nombre",
+        "email": "Correo",
+        "message": "Mensaje",
+        "send": "Enviar Mensaje"
+    },
+    "footer": {
+        "tagline": "Tacos Auténticos. Vibra Moderna.",
+        "rights": "Todos los derechos reservados."
+    }
+}
